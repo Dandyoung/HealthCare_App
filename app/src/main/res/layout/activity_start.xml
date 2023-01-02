@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nnn">
+    <ImageView
+        android:id = "@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/gym"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below = "@id/logo_image"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginRight = "20dp"
+        android:background="@drawable/def"
+        android:hint="나이"
+        android:paddingStart="15dp"
+        android:inputType="number"
+        />
+
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below = "@id/age"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginRight = "20dp"
+        android:background="@drawable/def"
+        android:hint="체중"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        />
+
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below = "@id/weight"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginRight = "20dp"
+        android:background="@drawable/def"
+        android:hint="키"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/startman"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc"
+        android:text="남자"
+        android:textStyle="bold"
+        android:textColor="#0F44E1"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/startwoman"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startman"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc"
+        android:text="여자"
+        android:textColor="#DC2534"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/start"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startwoman"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc"
+        android:text="기록하기"
+        android:textStyle="bold"
+        android:textColor="#6D32D5"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/basicE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-1dp"
+        android:background="@drawable/bg_gis_result_items_count"
+        android:text="당신의 기초대사량은?"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

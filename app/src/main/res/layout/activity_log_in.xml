@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ccc"
+    tools:context=".LogInActivity">
+    <ImageView
+        android:id = "@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/chat"/>
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below = "@id/logo_image"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginRight = "20dp"
+        android:background="@drawable/def"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below = "@id/email_edit"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginRight = "20dp"
+        android:background="@drawable/def"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:paddingStart="15dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/login_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc"
+        android:text="login!"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/signUp_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc"
+        android:textColor="@android:color/black"
+        android:text="Sign Up"
+        android:textSize="20sp"/>
+</RelativeLayout>

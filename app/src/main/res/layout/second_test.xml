@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nnn">
+
+
+    <EditText
+        android:id="@+id/kcal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginRight = "20dp"
+        android:background="@drawable/def"
+        android:hint="당신의 기초대사량을입력하세요"
+        android:paddingStart="15dp"
+        android:inputType="number"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kcal">
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="하루에 2시간 운동" />
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="하루에 1시간 운동" />
+
+        <RadioButton
+            android:id="@+id/basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운동을 하지 않음" />
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="활동이 거의없음"/>
+
+
+        <TextView
+            android:id="@+id/playkcal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/bg_gis_result_items_count"
+            android:text="당신의 활동대사량은?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addfood"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_below="@id/rgroup"
+        android:background="@drawable/abc"
+        android:layout_centerHorizontal="true"
+        android:text="식단추가"
+        android:textColor="#6D32D5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addfood"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/abc"
+        android:layout_centerHorizontal="true"
+        android:text="back"
+        android:textColor="#6D32D5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
